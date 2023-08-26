@@ -8,6 +8,18 @@ I will introduce a voting system utilizing Partial Homomorphic Encryption to pre
 The main goal was to create a voting system where the identity and the vote of the voters remain hidden from anyone in the network. The suggested system relies on partial homomorhpic encryption in order to collect and process all the votes preserving their privacy. I used Paillier cryptosystem but similar results could be achieved with ElGamal for example. Even though the proposed system targets voting it can be used for other purposes such quizes or surveys.
 The system is designed for both server and client side thus making it suitable for decentralized systems such as blockchain based.
 
+## Installation
+
+```bash
+npm install @cryptovarna/phe-voting-js
+```
+
+or
+
+```bash
+yarn add @cryptovarna/phe-voting-js
+```
+
 1. [General Flow](#general-flow)
 1. [Vote Encoding](#vote-encoding)
 1. [Paillier Cryptosystem](#paillier-cryptosystem)
