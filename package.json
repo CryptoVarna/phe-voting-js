@@ -1,0 +1,55 @@
+{
+    "name": "@cryptovarna/phe-voting-js",
+    "version": "1.0.1",
+    "description": "Privacy Preserving Voting System using Partial Homomorphic Encryption",
+    "baseUrl": "src",
+    "main": "dist/pheVotingJs.cjs.js",
+    "module": "dist/pheVotingJs.esm.js",
+    "browser": "dist/pheVotingJs.umd.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "rimraf": "rimraf",
+        "clean": "npm run rimraf -- dist",
+        "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+        "build": "rollup -c",
+        "test": "cross-env TS_NODE_PROJECT='./tsconfig.mocha.json' npx mocha -r ts-node/register test/**/*.ts --timeout 15000"
+    },
+    "author": "Galin Dinkov <galin@cryptovarna.com>",
+    "license": "MIT",
+    "private": false,
+    "keywords": [
+        "Cryptography",
+        "Javascript",
+        "Typescript",
+        "Privacy Protection",
+        "Voting System"
+    ],
+    "dependencies": {
+        "@types/node": "^20.5.4",
+        "big-integer": "1.6.51",
+        "typescript": "5.1.6"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.4",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.2.1",
+        "@rollup/plugin-typescript": "^11.1.2",
+        "@types/chai": "4.3.5",
+        "@types/mocha": "10.0.1",
+        "chai": "4.3.7",
+        "cross-env": "^7.0.3",
+        "mocha": "10.2.0",
+        "prettier": "^3.0.2",
+        "rimraf": "5.0.1",
+        "rollup": "^3.28.1",
+        "rollup-plugin-polyfill-node": "^0.12.0",
+        "rollup-plugin-uglify": "^6.0.4",
+        "string.prototype.padstart": "3.1.4",
+        "ts-loader": "9.4.4",
+        "ts-node": "10.9.1",
+        "tslib": "^2.6.2"
+    }
+}

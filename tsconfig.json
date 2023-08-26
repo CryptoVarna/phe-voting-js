@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "moduleResolution": "nodenext",
+        "lib": ["es2015", "dom"],
+        "declaration": true,
+        "noImplicitAny": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "noLib": false,
+        "preserveConstEnums": true,
+        "esModuleInterop": true,
+        "strict": true
+    },
+    "exclude": ["node_modules", "./dist"]
+}
