@@ -8,7 +8,8 @@
     "browser": "dist/pheVotingJs.umd.js",
     "types": "dist/index.d.ts",
     "files": [
-        "dist"
+        "dist",
+        "assets"
     ],
     "scripts": {
         "rimraf": "rimraf",
@@ -19,6 +20,14 @@
     },
     "author": "Galin Dinkov <galin@cryptovarna.com>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CryptoVarna/phe-voting-js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CryptoVarna/phe-voting-js/issues"
+    },
+    "homepage": "https://github.com/CryptoVarna/phe-voting-js",
     "private": false,
     "keywords": [
         "Cryptography",
