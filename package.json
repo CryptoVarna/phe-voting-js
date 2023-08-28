@@ -1,6 +1,6 @@
 {
     "name": "@cryptovarna/phe-voting-js",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Privacy Preserving Voting System using Partial Homomorphic Encryption",
     "baseUrl": "src",
     "main": "dist/pheVotingJs.cjs.js",
